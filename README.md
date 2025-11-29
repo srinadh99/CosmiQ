@@ -1,5 +1,14 @@
 # CosmiQ: Uncertainty Quantification for Cosmic Ray Detection in Astronomical Images with Variational U‑Net
 
+**Qualitative CR Masks and uncertainties on baseline**
+
+![EX1 SG CM](./CosmiQ/baseline_qualitative_4plots.png) 
+
+**Qualitative CR Masks and uncertainties using VI**
+
+![EX1 SG CM](./CosmiQ/vi_qualitative_4plots1.png) 
+
+
 This repo extends **[deepCR](https://github.com/profjsb/deepCR/tree/master)**  with a **variational (Bayesian) U‑Net** that:
 
 * Detects cosmic rays in HST/ACS images 
@@ -192,14 +201,3 @@ prob_mask, entropy = mdl.clean_vi(image, T=16, return_entropy=True)
 # Binary mask at threshold 0.5
 binary_mask = (prob_mask > 0.5).astype("uint8")
 ```
-
-**Qualitative CR Masks and uncertainties on baseline**
-
-![EX1 SG CM](./CosmiQ/baseline_qualitative_4plots.png) 
-
-**Qualitative CR Masks and uncertainties using VI**
-
-![EX1 SG CM](./CosmiQ/vi_qualitative_4plots1.png) 
-
----
-
