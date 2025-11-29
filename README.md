@@ -1,4 +1,4 @@
-# CosmiQ: Uncertainty‑Aware Cosmic Ray Detection in Astronomical Images with Variational U‑Net
+# CosmiQ: Uncertainty Quantification for Cosmic Ray Detection in Astronomical Images with Variational U‑Net
 
 This repo extends **[deepCR](https://github.com/profjsb/deepCR/tree/master)**  with a **variational (Bayesian) U‑Net** that:
 
