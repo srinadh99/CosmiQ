@@ -21,7 +21,7 @@ You can switch between the deterministic baseline and the Variational Inference 
 Per‑pixel CR probability: 
 $p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
 
-### Binary cross‑entropy loss:
+Binary cross‑entropy loss:
 $\mathcal{L}_{\text{BCE}}(\theta)=$ 
 
 $-\frac{1}{N}\sum_{i=1}^{N} \left[ y_i \log p_\theta(y_i=1\mid x_i) + (1-y_i)\log\big(1-p_\theta(y_i=1\mid x_i)\big) \right]$
