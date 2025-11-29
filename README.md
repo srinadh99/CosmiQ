@@ -42,6 +42,24 @@ $\mathrm{KL}\big(q_\phi(w)||p(w)\big)=$
 $\log\frac{\sigma_p}{\sigma_q}+\frac{\sigma_q^2 + \mu^2}{2\sigma_p^2} \frac{1}{2}.$
 
 ### The total training loss (ELBO‑style) is:
+The loss function is defined as:
+
+$$
+\mathcal{L}
+= \mathcal{L}_\text{BCE}
++ \beta \cdot \frac{1}{N_\text{train}}
+\sum_{\ell}
+\mathrm{KL}\!\left(q_\phi(w_\ell) \,\|\, p(w_\ell)\right),
+$$
+
+where:
+
+- $\mathcal{L}_\text{BCE}$ is the binary cross-entropy loss,
+- $\beta$ is a weighting coefficient for the KL regularizer,
+- $N_\text{train}$ is the number of training samples, and
+- $\mathrm{KL}(\cdot \,\|\, \cdot)$ is the Kullback–Leibler divergence between the approximate posterior $q_\phi(w_\ell)$ and the prior $p(w_\ell)$.
+
+
 $\mathcal{L}
 \mathcal{L}*{\text{BCE}}
 +
@@ -53,7 +71,7 @@ $
 
 where:
 
-* $(\beta = \texttt{kl_beta})$ controls the strength of the KL term
+* (\beta = \texttt{kl_beta}) controls the strength of the KL term
 * ( N_{\text{train}} ) is the number of training samples
 
 ---
