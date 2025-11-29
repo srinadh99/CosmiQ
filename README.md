@@ -193,9 +193,13 @@ prob_mask, entropy = mdl.clean_vi(image, T=16, return_entropy=True)
 binary_mask = (prob_mask > 0.5).astype("uint8")
 ```
 
-**Qualitative CR Masks and uncertainities**
+**Qualitative CR Masks and uncertainties on baseline**
 
-| ![EX1 SG CM](./CosmiQ/baseline_qualitative_4plots.png) | 
+![EX1 SG CM](./CosmiQ/baseline_qualitative_4plots.png) 
+
+**Qualitative CR Masks and uncertainties using VI**
+
+![EX1 SG CM](./CosmiQ/vi_qualitative_4plots1.png) 
 
 ---
 
