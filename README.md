@@ -7,7 +7,7 @@ This repo extends **[deepCR](https://github.com/profjsb/deepCR/tree/master)**  w
 * Provides **per‑pixel uncertainty maps** via Monte Carlo (MC) sampling
 * Evaluates **calibration** (Brier, NLL, ECE) and **risk–coverage** curves
 
-You can switch between the deterministic baseline and Variational Inference (VI) model with a single flag:
+You can switch between the deterministic baseline and the Variational Inference (VI) model with a single flag:
 
 * `bayesian=False` → standard `UNet2Sigmoid` (deepCR‑style)
 * `bayesian=True`  → `UNet2SigmoidVI` with Bayesian conv layers
@@ -16,10 +16,9 @@ You can switch between the deterministic baseline and Variational Inference (VI)
 
 ## 1. Model & Loss
 
-### 1.1 Baseline U‑Net (deterministic)
+### 1.1 Baseline U‑Net (Deterministic)
 
-Per‑pixel CR probability:
-$p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
+Per‑pixel CR probability: $p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
 
 ### Binary cross‑entropy loss:
 $\mathcal{L}_{\text{BCE}}(\theta)=$ 
