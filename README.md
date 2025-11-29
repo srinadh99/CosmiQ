@@ -36,7 +36,7 @@ $w \sim q_\phi(w)=\mathcal{N}(\mu,\sigma^2),
 Gaussian prior:
 $p(w)=\mathcal{N}(0,\sigma_p^2).$
 
-### Per‑parameter KL term: 
+Per‑parameter KL term: 
 
 $\mathrm{KL}\big(q_\phi(w)||p(w)\big)=$
 $\log\frac{\sigma_p}{\sigma_q}+\frac{\sigma_q^2 + \mu^2}{2\sigma_p^2} \frac{1}{2}.$
