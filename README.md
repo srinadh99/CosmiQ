@@ -2,12 +2,12 @@
 
 This repo extends **[deepCR](https://github.com/profjsb/deepCR/tree/master)**  with a **variational (Bayesian) U‑Net** that:
 
-* Detects cosmic rays in HST/ACS images (same task as deepCR)
+* Detects cosmic rays in HST/ACS images 
 * Outputs **per‑pixel CR probabilities**
 * Provides **per‑pixel uncertainty maps** via Monte Carlo (MC) sampling
 * Evaluates **calibration** (Brier, NLL, ECE) and **risk–coverage** curves
 
-You can switch between the deterministic baseline and VI model with a single flag:
+You can switch between the deterministic baseline and Variational Inference (VI) model with a single flag:
 
 * `bayesian=False` → standard `UNet2Sigmoid` (deepCR‑style)
 * `bayesian=True`  → `UNet2SigmoidVI` with Bayesian conv layers
