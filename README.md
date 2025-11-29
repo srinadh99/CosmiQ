@@ -18,7 +18,8 @@ You can switch between the deterministic baseline and the Variational Inference 
 
 ### 1.1 Baseline U‑Net (Deterministic)
 
-Per‑pixel CR probability:$p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
+Per‑pixel CR probability: 
+$p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
 
 ### Binary cross‑entropy loss:
 $\mathcal{L}_{\text{BCE}}(\theta)=$ 
