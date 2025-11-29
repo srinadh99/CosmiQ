@@ -41,11 +41,8 @@ Per‑parameter KL term:
 $\mathrm{KL}\big(q_\phi(w)||p(w)\big)=$
 $\log\frac{\sigma_p}{\sigma_q}+\frac{\sigma_q^2 + \mu^2}{2\sigma_p^2} \frac{1}{2}.$
 
-The total training loss (ELBO‑style) is:
-$
-\mathcal{L}
-===========
-
+### The total training loss (ELBO‑style) is:
+$\mathcal{L}
 \mathcal{L}*{\text{BCE}}
 +
 \beta \cdot
@@ -53,9 +50,10 @@ $
 \sum_{\ell}
 \mathrm{KL}\big(q_\phi(w_\ell),|,p(w_\ell)\big),
 $
+
 where:
 
-* ( \beta = \texttt{kl_beta} ) controls the strength of the KL term
+* $(\beta = \texttt{kl_beta})$ controls the strength of the KL term
 * ( N_{\text{train}} ) is the number of training samples
 
 ---
