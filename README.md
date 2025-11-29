@@ -21,10 +21,6 @@ You can switch between the deterministic baseline and Variational Inference (VI)
 Per‑pixel CR probability:
 $p_\theta(y=1\mid x) = \sigma(f_\theta(x))$
 
-This is an inline equation: $E=mc^2$.
-This is a displayed equation:
-$\sum_{i=1}^{n} i = \frac{n(n+1)}{2}$
-
 ### Binary cross‑entropy loss:
 $\mathcal{L}_{\text{BCE}}(\theta)=$ 
 
